@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<link rel="stylesheet" href="./css/main.css" />
+		<title>Document</title>
+	</head>
+	<body>
+		<header class="header">
+			<div class="container">
+				<div class="header__title">BMI CALCULATOR</div>
+				<div class="lang-btn">ENG</div>
+			</div>
+		</header>
+		<main class="main">
+			<section class="section">
+				<div class="container">
+					<div class="section__block">
+						<form action="" class="calc-form">
+							<div class="calc-form__name-block">
+								<h3 class="calc-form__name-title">
+									Iltimos ismingizni kiriting:
+								</h3>
+								<input
+									id="ism"
+									class="form__name number"
+									type="text"
+									onfocus="this.placeholder='' "
+									placeholder="name" />
+							</div>
+							<div class="calc-form__gender">
+								<div class="calc-form__gender-btn male-btn">
+									<img
+										src="./male-gender.png"
+										alt=""
+										width="100"
+										height="100"
+										class="calc-form__gender-img" />
+									<h3 class="calc-form__gender-title">
+										MALE
+									</h3>
+								</div>
+								<div class="calc-form__gender-btn female-btn">
+									<img
+										src="./femenine.png"
+										alt=""
+										width="100"
+										height="100"
+										class="calc-form__gender-img" />
+									<h3 class="calc-form__gender-title">
+										MALE
+									</h3>
+								</div>
+							</div>
+							<div class="calc-form__units">
+								<div class="calc-form__height">
+									<h3 class="calc-form__height-title title">
+										HEIGHT
+									</h3>
+									<input
+										id="height-number"
+										class="height-number number"
+										type="number"
+										placeholder="---"
+										onfocus="this.placeholder='' " />
+									<div class="calc-form__height-indicator">
+										<div id="oval" class="oval"></div>
+									</div>
+								</div>
+								<div class="weight-age">
+									<div class="calc-form__card">
+										<h3 class="calc-form__card-title title">
+											WEIGHT
+										</h3>
+										<input
+											id="weight-number"
+											class="calc-form__card-number number"
+											type="number"
+											placeholder="---"
+											onfocus="this.placeholder='' " />
+										<div class="buttons">
+											<div
+												class="minus-btn calc-form__card-btn">
+												-
+											</div>
+											<div
+												class="minus-btn calc-form__card-btn">
+												+
+											</div>
+										</div>
+									</div>
+									<div class="calc-form__card">
+										<h3 class="calc-form__card-title title">
+											AGE
+										</h3>
+										<input
+											id="age-number"
+											class="calc-form__card-number number"
+											type="number"
+											placeholder="---"
+											onfocus="this.placeholder='' " />
+										<div class="buttons">
+											<div
+												class="minus-btn calc-form__card-btn">
+												-
+											</div>
+											<div
+												class="minus-btn calc-form__card-btn">
+												+
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+							<button type="submit" class="main-btn">
+								CALCULATE YOUR BMI
+							</button>
+						</form>
+						<div class="result" id="result">
+							<img src="" alt="" class="result__img" />
+							<div class="result__info">
+								<h3 id="result__title" class="result__title">
+									Hurmatli
+									<span
+										id="name-text"
+										class="name-text"></span>
+								</h3>
+								<h4 class="indicator-title">
+									Sizning tana holatingiz :
+									<span id="indicator" class="indicator"
+										>a'lo😊</span
+									>
+								</h4>
+								<p class="result__subt">
+									Sizga quyida ko'rsatilgan linkdagi maqolani
+									o'qishni tavsiya qilamiz:
+									<a
+										class="result_link"
+										id="result_link"
+										href="#"
+										>link</a
+									>
+								</p>
+							</div>
+							<div class="result__img-block">
+								<img
+									id="result_img"
+									src="https://www.emoji.co.uk/files/emoji-one/activity-emoji-one/1691-person-with-ball.png"
+									alt="rasm"
+									width="300"
+									height="300"
+									class="result__img" />
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+		</main>
+		<script src="./app.js"></script>
+	</body>
+</html>
