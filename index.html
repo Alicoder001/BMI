@@ -10,51 +10,86 @@
 	<body>
 		<header class="header">
 			<div class="container">
-				<div class="header__title">BMI CALCULATOR</div>
-				<div class="lang-btn">ENG</div>
+				<button id="bmi-btn" class="header__btn">BMI CALCULATOR</button>
+				<button id="guess-btn" class="header__btn">GUESS NUMBER</button>
 			</div>
 		</header>
 		<main class="main">
 			<section class="section">
 				<div class="container">
-					<div class="section__block">
+					<div class="section__block" id="section-block">
 						<form action="" class="calc-form">
-							<div class="calc-form__name-block">
-								<h3 class="calc-form__name-title">
-									Iltimos ismingizni kiriting:
-								</h3>
-								<input
-									id="ism"
-									class="form__name number"
-									type="text"
-									onfocus="this.placeholder='' "
-									placeholder="name" />
-							</div>
-							<div class="calc-form__gender">
-								<div class="calc-form__gender-btn male-btn">
-									<img
-										src="./male-gender.png"
-										alt=""
-										width="100"
-										height="100"
-										class="calc-form__gender-img" />
-									<h3 class="calc-form__gender-title">
-										MALE
+							<div id="name-block">
+								<div class="calc-form__name-block">
+									<h3 class="calc-form__name-title">
+										Iltimos ismingizni kiriting:
 									</h3>
-								</div>
-								<div class="calc-form__gender-btn female-btn">
-									<img
-										src="./femenine.png"
-										alt=""
-										width="100"
-										height="100"
-										class="calc-form__gender-img" />
-									<h3 class="calc-form__gender-title">
-										MALE
-									</h3>
+									<input
+										id="ism"
+										class="form__name number"
+										type="text"
+										onfocus="this.placeholder='' "
+										placeholder="name" />
 								</div>
 							</div>
-							<div class="calc-form__units">
+							<div class="guess-block" id="guess-block">
+								<div
+									id="guess__img-wrap"
+									class="guess-img__wrap">
+									<img
+										id="guess-img"
+										class="guess-img"
+										width="300"
+										height="200"
+										src="https://i.ytimg.com/vi/0wHXNMRwBMg/hqdefault.jpg"
+										alt="rasm" />
+								</div>
+
+								<div
+									id="lost-win"
+									class="guess__info-lost guess-info">
+									<h1
+										id="afsus-title"
+										class="afsus-title"></h1>
+									<h3 id="afsus-info" class="random-number">
+										Ixtiyoriy sonni kiriting:
+									</h3>
+									<input
+										id="guess-input"
+										class="guess-input number"
+										type="number"
+										onfocus="this.placeholder='' "
+										placeholder="---" />
+								</div>
+							</div>
+							<div id="gender-block">
+								<div id="gender" class="calc-form__gender">
+									<div class="calc-form__gender-btn male-btn">
+										<img
+											src="./male-gender.png"
+											alt=""
+											width="100"
+											height="100"
+											class="calc-form__gender-img" />
+										<h3 class="calc-form__gender-title">
+											MALE
+										</h3>
+									</div>
+									<div
+										class="calc-form__gender-btn female-btn">
+										<img
+											src="./femenine.png"
+											alt=""
+											width="100"
+											height="100"
+											class="calc-form__gender-img" />
+										<h3 class="calc-form__gender-title">
+											MALE
+										</h3>
+									</div>
+								</div>
+							</div>
+							<div id="units" class="calc-form__units">
 								<div class="calc-form__height">
 									<h3 class="calc-form__height-title title">
 										HEIGHT
@@ -114,7 +149,10 @@
 									</div>
 								</div>
 							</div>
-							<button type="submit" class="main-btn">
+							<button
+								id="main-btn"
+								type="submit"
+								class="main-btn">
 								CALCULATE YOUR BMI
 							</button>
 						</form>
